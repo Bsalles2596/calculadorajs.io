@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <section class="background">
+        <div class="container">
+            <di class="calculadora">
+                <h2>Calculadora</h2>
+                <p id="resultados">
+                
+                </p>
+                <table>
+                    <tr>
+                        <th>
+                            <button class="botao"onclick="clean('C')" >C</button>
+                        </th>
+                        <th>
+                            <button class="botao"onclick="back('<')" ><</button>
+                        </th>
+                        <th>
+                            <button class="botao"onclick="insert('/')" >/</button>
+                        </th>
+                        <th>
+                            <button class="botao"onclick="insert('*')" >*</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button class="botao" onclick="insert('7')" >7</button>
+                        </th>
+                        <th>
+                            <button class="botao" onclick="insert('8')" >8</button>
+                        </th>
+                        <th>
+                            <button class="botao" onclick="insert('9')" >9</button>
+                        </th>
+                        <th>
+                            <button class="botao"onclick="insert('-')" >-</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button class="botao" onclick="insert('4')" >4</button>
+                        </th>
+                        <th>
+                            <button class="botao" onclick="insert('5')" >5</button>
+                        </th>
+                        <th>
+                            <button class="botao" onclick="insert('6')" >6</button>
+                        </th>
+                        <th>
+                            <button class="botao"onclick="insert('+')" >+</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button class="botao" onclick="insert('1')" >1</button>
+                        </th>
+                        <th>
+                            <button class="botao" onclick="insert('2')" >2</button>
+                        </th>
+                        <th>
+                            <button class="botao" onclick="insert('3')" >3</button>
+                        </th>
+                        <th rowspan="2">
+                            <button class="botao igual"onclick="calcular('=')" > = </button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <button class="botao zero" onclick="insert('0')">0</button>
+                        </th>
+                        <th>
+                            <button class="botao"onclick="insert('.')" >.</button>
+                        </th>
+                    </tr>
+                </table>
+            </di>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
